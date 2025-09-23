@@ -9,14 +9,14 @@ const HeroSection = () => {
         <img
           src={heroBanner}
           alt="KittehCoin Hero - The internet is made of cats, now the blockchain is too"
-          className="hidden md:block w-full h-full object-cover hero-float cat-hover"
+          className="hidden md:block w-full h-full object-cover hero-popup"
         />
         {/* Mobile Hero Image */}
         <div className="block md:hidden w-full h-full mobile-hero-container">
           <img
             src="/mobile phone hero section image.png"
             alt="KittehCoin Hero - The internet is made of cats, now the blockchain is too"
-            className="w-full h-full object-contain hero-float cat-hover"
+            className="w-full h-full object-contain hero-popup"
           />
         </div>
       </div>

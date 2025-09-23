@@ -151,11 +151,12 @@
   }
 
   /* Enhanced Animations */
-  .hero-float { animation: hero-breathe 4s ease-in-out infinite; }
+  .hero-popup { 
+    animation: hero-popup 2s ease-out; 
+    transform-origin: center bottom;
+  }
   .floating-coin { animation: coin-float 8s ease-in-out infinite; }
   .sparkle { animation: sparkle-twinkle 2s ease-in-out infinite; }
-  .cat-hover { transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-  .cat-hover:hover { transform: scale(1.1) rotate(5deg); filter: brightness(1.2); }
   
   /* Interactive Elements */
   .meme-flip { transition: transform 0.6s; transform-style: preserve-3d; }
@@ -207,6 +208,21 @@
 
 @layer utilities {
   /* Animation keyframes */
+  @keyframes hero-popup {
+    0% { 
+      transform: scale(0.8) translateY(50px); 
+      opacity: 0; 
+    }
+    50% { 
+      transform: scale(1.05) translateY(-10px); 
+      opacity: 0.8; 
+    }
+    100% { 
+      transform: scale(1) translateY(0px); 
+      opacity: 1; 
+    }
+  }
+
   @keyframes float {
     0%, 100% { transform: translateY(0px) rotate(0deg); }
     50% { transform: translateY(-20px) rotate(2deg); }

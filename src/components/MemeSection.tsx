@@ -7,17 +7,15 @@ const MemeSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Meme images from public folder
+  // Meme images from slideshow new images folder
   const memeImages = [
-    "/Meme 1.PNG",
-    "/Meme 2.PNG", 
-    "/Meme 3.PNG",
-    "/Meme 4.JPG",
-    "/Meme 5.PNG",
-    "/Meme 6.PNG",
-    "/Meme 7.PNG",
-    "/Meme 8.PNG",
-    "/Meme 9.PNG"
+    "/slideshow new images/Meme 1.PNG",
+    "/slideshow new images/Meme 2.PNG", 
+    "/slideshow new images/Meme 3.PNG",
+    "/slideshow new images/Meme 4.PNG",
+    "/slideshow new images/Meme 5.PNG",
+    "/slideshow new images/Meme 6.PNG",
+    "/slideshow new images/Meme 7.PNG"
   ];
 
   useEffect(() => {

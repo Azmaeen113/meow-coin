@@ -22,23 +22,14 @@ const CTASection = () => {
       <div className="container mx-auto max-w-5xl text-center relative z-10">
         {/* Main heading */}
         <div className="mb-16">
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
-            {/* Dogs side */}
-            <div className="text-center md:text-right">
-              <h2 className="text-4xl md:text-6xl font-black mb-6">
+          <div className="text-center mb-12">
+            {/* Dogs side - single line */}
+            <div className="text-center">
+              <h2 className="text-4xl md:text-6xl font-black mb-6 whitespace-nowrap">
                 <span className="text-muted-foreground">The Dogs Had Their </span>
                 <span className="text-destructive">Run</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-transparent via-destructive to-transparent mx-auto md:ml-auto md:mr-0"></div>
-            </div>
-            
-            {/* Cats side */}
-            <div className="text-center md:text-left">
-              <h2 className="text-4xl md:text-6xl font-black mb-6">
-                <span className="text-primary">Cat Comeback</span>
-                <span className="text-foreground"> Time</span>
-              </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto md:mr-auto md:ml-0"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-transparent via-destructive to-transparent mx-auto"></div>
             </div>
           </div>
         </div>

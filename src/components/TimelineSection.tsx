@@ -12,11 +12,8 @@ const TimelineSection = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Animate timeline points sequentially
-          const intervals = timelineData.map((_, index) => 
-            setTimeout(() => setActivePoint(index), index * 800)
-          );
-          return () => intervals.forEach(clearTimeout);
+          // Show all timeline points immediately
+          setActivePoint(timelineData.length - 1);
         }
       },
       { threshold: 0.1 }
@@ -56,14 +53,12 @@ const TimelineSection = () => {
       year: "2013-2024",
       title: "The Downfall",
       description: "DOGE's cult wasn't ready to share the spotlight. They FUDed hard. Liquidity dried. Devs vanished. For over a decade, cats ruled memes, but had no blue chip coin to call their own. Dogs had DOGE, SHIB, FLOKI... Cats had silence.",
-      tweets: 0,
       theme: "downfall"
     },
     {
       year: "2025",
       title: "KittehCoin RETURNS",
       description: "KittehCoin ($MEOW) has been fully relaunched — with the same legendary ticker, the same 2013 roots, and a new mission to lead the cat memecoin revolution. No more niche cat coins. $MEOW is back to fix the imbalance — and take the throne.",
-      tweets: 2,
       theme: "return"
     },
     {
