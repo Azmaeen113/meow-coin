@@ -155,6 +155,9 @@
     animation: hero-popup 2s ease-out; 
     transform-origin: center bottom;
   }
+  .hero-lettering-animation {
+    animation: hero-lettering-fade 5s ease-in-out infinite;
+  }
   .floating-coin { animation: coin-float 8s ease-in-out infinite; }
   .sparkle { animation: sparkle-twinkle 2s ease-in-out infinite; }
   
@@ -208,6 +211,25 @@
 
 @layer utilities {
   /* Animation keyframes */
+  @keyframes hero-lettering-fade {
+    0% { 
+      opacity: 0; 
+      transform: scale(0.9);
+    }
+    20% { 
+      opacity: 1; 
+      transform: scale(1);
+    }
+    80% { 
+      opacity: 1; 
+      transform: scale(1);
+    }
+    100% { 
+      opacity: 0; 
+      transform: scale(0.9);
+    }
+  }
+
   @keyframes hero-popup {
     0% { 
       transform: scale(0.8) translateY(50px); 
