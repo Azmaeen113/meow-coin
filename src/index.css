@@ -161,6 +161,11 @@
   .floating-coin { animation: coin-float 8s ease-in-out infinite; }
   .sparkle { animation: sparkle-twinkle 2s ease-in-out infinite; }
   
+  /* Smooth Video Loop */
+  .smooth-loop {
+    transition: opacity 0.1s ease-in-out;
+  }
+  
   /* Interactive Elements */
   .meme-flip { transition: transform 0.6s; transform-style: preserve-3d; }
   .meme-flip:hover { transform: rotateY(180deg); }
